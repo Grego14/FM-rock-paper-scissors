@@ -1,0 +1,39 @@
+.game{
+  --header-margin-top: 2rem;
+}
+
+.game__header{
+  min-width: calc(100% - 40vw);
+}
+
+.game__content--user-select .game__options {
+  --options-multiplier-w: 3;
+  --option-multiplier: 1.5;
+  --option-size-min: 10rem;
+}
+
+.game__options__container {
+  flex-grow: 2;
+}
+
+.game__content--user-select .game__option--selected,
+.game__content--user-select .game__option--house {
+  top: initial;
+  bottom: 0;
+}
+
+.game__content--house-selected .game__option--selected {
+  transform: translateX(calc(-60% - 15vw));
+}
+
+.game__content--house-selected .game__option--house {
+  transform: translateX(calc(60% + 15vw));
+}
+
+.game__result {
+  transform: translate(0, -120%);
+}
+
+.game__rules-btn {
+  margin-left: auto;
+}
